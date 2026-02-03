@@ -30,7 +30,7 @@ const NavigationItem = () => {
         <a
           key={item.id}
           href={`#${item.id}`}
-          onClick={() => setActive(item.id)}
+          onClick={() => setActive(item.id)} // track active link (section)
           className={`flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 outline-none focus:ring-2 focus:ring-amber-500 ${
             active === item.id
               ? "bg-amber-500 text-white"
@@ -51,6 +51,8 @@ const NavigationItem = () => {
 // Holds the title and subtitle of each section of the page
 const SectionHeader = ({ title, subtitle }) => (
   <div className="mb-16">
+    {/*  animate the section subtitle ( ex: LOCATION ) as it comes into view, so that it appears from the left*/}
+
     <motion.div
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -91,6 +93,7 @@ export default function App() {
         </div>
 
         <div className="relative z-10 max-w-4xl text-white">
+          {/* Animate the heading Fire & Clay so that it pops up from the bottom on load*/}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -133,7 +136,7 @@ export default function App() {
           <div className="relative">
             <motion.div
               initial={{ clipPath: "inset(100% 0 0 0)" }}
-              whileInView={{ clipPath: "inset(0% 0 0 0)" }}
+              whileInView={{ clipPath: "inset(0% 0 0 0)" }} // show the image as it comes into view
               transition={{ duration: 1 }}
               className="overflow-hidden shadow-2xl aspect-4/5 rounded-2xl"
             >
@@ -161,7 +164,7 @@ export default function App() {
               Our Current Tasting Experience
             </h2>
           </div>
-
+          {/* Scale menu on hover */}
           <motion.div
             whileHover={{ scale: 1.01 }}
             className="relative overflow-hidden border rounded-lg shadow-2xl group cursor-crosshair border-white/10"
