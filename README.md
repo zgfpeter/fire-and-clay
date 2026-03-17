@@ -1,4 +1,4 @@
-# Fire & Clay is a responsive, minimalist landing page for a restaurant.
+# Ember Esssence is a responsive, minimalist landing page for a restaurant.
  It provides information about the restaurant, such as the history, current menu, contact information as well as the location.
 
 ## Live Demo 
