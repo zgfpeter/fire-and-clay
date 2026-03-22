@@ -1,4 +1,4 @@
-# Ember Esssence is a responsive, minimalist landing page for a restaurant.
+# Fire & Clay is a responsive, minimalist landing page for a restaurant.
  It provides information about the restaurant, such as the history, current menu, contact information as well as the location.
 
 ## Live Demo 
@@ -10,7 +10,7 @@ Subtle animations with framer motion give it a premium feel and smooth UI/UX.
 
 ### Run this locally
 1. Clone the repository
-> https://github.com/zgfpeter/ember-essence.git
+> https://github.com/zgfpeter/fire-and-clay.git
 2. Install dependencies
 > npm install
 3. Run the development server
